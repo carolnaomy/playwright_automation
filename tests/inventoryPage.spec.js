@@ -33,8 +33,6 @@ test('Ordenação de produtos por nome', async ({ page }) => {
 
     expect(itemNameDesc).toContain(inventoryPage.ObjectsPage.FirstItemNameDesc);
 
-
-
 });
 
 test('Ordenação de produtos por preço', async ({ page }) => {
@@ -78,7 +76,7 @@ test('Acessar a página do produto', async ({ page }) => {
 
 });
 
-test('Adicionar/Remover item do carrinho na pagina do inventório', async ({ page }) => {
+test('Adicionar/Remover item do carrinho na pagina do inventário', async ({ page }) => {
     global.page = page
 
     await loginPage.navegatTo();
@@ -99,6 +97,3 @@ test('Adicionar/Remover item do carrinho na pagina do inventório', async ({ pag
 
     expect(await productRemovedQtd.count()).toBe(0);
 });
-
-
-

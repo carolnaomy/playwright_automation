@@ -40,7 +40,7 @@ test('Finalizar a compra com um produto', async ({ page }) => {
 
 });
 
-test('Adicionar item pelo inventório e remover pelo carrinho', async ({ page }) => {
+test('Adicionar item pelo inventário e remover pelo carrinho', async ({ page }) => {
    global.page = page
 
    await loginPage.navegatTo();
